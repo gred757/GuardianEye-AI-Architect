@@ -33,6 +33,9 @@ The architecture utilizes a physical separation between **Production** and **Dat
 * **Cold Path (Storage & MLOps):** Leverages S3 Data Lake and AWS Glue for long-term auditability and automated retraining cycles.
 
 ## 4. Component Deep Dive
+
+> 💡 **Note:** For detailed technical specifications of each module, please refer to the [Component Guide](COMPONENTS_GUIDE.md).
+
 ### Account A: Production
 * **API Gateway + Cognito:** Secure entry point with Client Credentials flow for banking systems.
 * **Inference Lambda:** Orchestrates real-time data preparation and scoring.
