@@ -3,6 +3,9 @@
 ## 📌 Project Overview
 GuardianEye AI is an advanced monitoring subsystem designed for real-time anomaly detection in banking transactions. It handles high-load traffic (up to 100,000 RPS) with low latency while ensuring high resiliency and explainability. 
 
+## 📖 Documentation
+* [Detailed Solution Design & Architectural Justification](SOLUTION_DESIGN.md) — A deep dive into the architectural decisions, data paths (Hot/Warm/Cold), and MLOps strategy.
+
 ## 🏗 System Architecture
 The system is built on a multi-account AWS strategy to isolate production traffic from the ML research environment. 
 
