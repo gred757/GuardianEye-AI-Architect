@@ -9,6 +9,8 @@ GuardianEye AI is an advanced monitoring subsystem designed for real-time anomal
 ## 🏗 System Architecture
 The system is built on a multi-account AWS strategy to isolate production traffic from the ML research environment. 
 
+![GuardianEye AI Architecture](images/architecture_diagram.png)
+
 ### Key Architecture Paths:
 * **Hot Path (<100ms):** Synchronous transaction scoring using AWS Lambda, SageMaker Endpoints, and Online Feature Store. 
 * **Warm Path:** Asynchronous feature updates and SHAP explainability calculation via Kinesis Data Streams and DynamoDB. 
